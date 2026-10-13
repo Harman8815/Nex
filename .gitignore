@@ -1,1 +1,6 @@
 .kilo
+
+# Added by cargo
+
+/target
+/temp
