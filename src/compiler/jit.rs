@@ -1,6 +1,6 @@
 use inkwell::{
-    builder::Builder, context::Context, execution_engine::JitFunction, types::IntType,
-    values::AnyValue, values::IntValue, OptimizationLevel,
+    OptimizationLevel, builder::Builder, context::Context, execution_engine::JitFunction,
+    types::IntType, values::AnyValue, values::IntValue,
 };
 
 use crate::{Compile, Node, Operator, Result};

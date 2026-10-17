@@ -1,6 +1,6 @@
+use crate::compiler::vm::Bytecode;
 use crate::compiler::vm::bytecode::Interpreter as BytecodeInterpreter;
 use crate::compiler::vm::opcode::*;
-use crate::compiler::vm::Bytecode;
 use crate::{Compile, Node, Result};
 
 // ANCHOR: vm
@@ -112,8 +112,8 @@ impl Compile for VM {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::compiler::vm::bytecode::Interpreter;
     use crate::Compile;
+    use crate::compiler::vm::bytecode::Interpreter;
 
     fn assert_pop_last(source: &str, node: Node) {
         let byte_code = Interpreter::from_source(source);

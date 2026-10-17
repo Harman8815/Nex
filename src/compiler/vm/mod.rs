@@ -5,5 +5,5 @@ pub mod vm;
 
 pub use crate::compiler::vm::{
     bytecode::Bytecode,
-    opcode::{make_op, OpCode},
+    opcode::{OpCode, make_op},
 };

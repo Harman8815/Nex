@@ -1,4 +1,4 @@
-use crate::compiler::vm::{make_op, OpCode};
+use crate::compiler::vm::{OpCode, make_op};
 use crate::{Compile, Node, Operator};
 
 #[derive(Debug, Clone, PartialEq, Eq)]
