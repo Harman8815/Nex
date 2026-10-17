@@ -1,6 +1,20 @@
-[package]
+﻿[package]
 name = "Nex"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.104"
+cfg-if = "1.0.5"
+# inkwell = { version = "0.10.0", features = ["llvm18-1"] }
+pest = "2.9.4"
+pest_derive = "2.9.4"
+rustyline = "18.0.1"
+
+[features]
+jit = []
+interpreter = []
+vm = []
+
+default = ["vm"]
+
